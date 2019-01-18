@@ -1,0 +1,89 @@
+/* component/select/select.wxss 下拉框行高50rpx 下拉项行高50rpx */
+.select_box_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.select_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.select_content{
+  background: white;
+  border: 2rpx solid #ddd;
+  border-radius: 5rpx;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.select_img{
+    position: absolute;
+    right: 20rpx;
+    top: 21rpx;
+    width: 12rpx;
+    height: 8rpx;
+    transition: all .3s ease;
+}
+.select_text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:0 20px 0 6px;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    /* 可自定义 */
+    font-size: 26rpx;  
+    height: 26rpx;
+}
+.select_list{
+    background: white;
+    width: inherit;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 9999;
+    /* animation: max-height 0.5s; */
+    height: 0;
+    /* 根据下拉框高度修改 */
+    top: 50rpx;
+    overflow: hidden;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.select_item{
+    border: 2rpx solid #ddd;
+    border-top: none;
+    padding: 0 10px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 26rpx;
+    /* 弹出框行高度 可自定义 */
+    height: 50rpx;
+    line-height: 50rpx;
+    box-sizing:  border-box;
+}
+
+.select_item:first-child{
+    border-top: 2rpx solid #ddd;
+}

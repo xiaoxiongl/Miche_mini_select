@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class='offer_wrap'>
+
+  <text>{{select_value1.text}}</text>
+  <view class='offer_item'>
+    <select prop-array='{{selectList}}' selectText="请选择" stype="1" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
+  </view>
+
+  <text>{{select_value2.text}}</text>
+  <view class='offer_item'>
+    <select prop-array='{{selectList}}' selectText="请选择" stype="2" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
+  </view>
+
+  <text>{{select_value3.text}}</text>
+  <view class='offer_item'>
+    <select prop-array='{{selectList}}' selectText="请选择" stype="3" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
+  </view>
+
+</view>
+
