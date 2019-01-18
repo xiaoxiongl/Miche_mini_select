@@ -1,5 +1,4 @@
 # 微信小程序 下拉框Miche_mini_select
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0118/225416_073c3e48_2300783.gif "gif_select.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0119/074704_0b9dfab7_2300783.gif "select_gif2.gif")
 #### 本下拉框特点：
 1.保证下拉框在最上层，不会被其他控件所遮挡
