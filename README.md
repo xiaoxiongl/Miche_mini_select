@@ -1,37 +1,34 @@
 # Miche_mini_select
 
 #### 介绍
-小程序 下拉框
+微信小程序 下拉框
+
+
+本下拉框特点：
+1.保证下拉框在最上层，不会被其他控件所遮挡
+2.引用方便，直接引用组件即可，与页面耦合性低
+3.使用方便，只需给出外框长宽即可自适应大小
+4.下拉菜单紧贴下拉框，不必计算位置
 
 #### 软件架构
 软件架构说明
-
+下拉框插件在文件夹select中
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1.将select文件夹拖入项目
+2. 在json文件中引用select插件
+"usingComponents": {
+    "select": "/component/select/select"
+  }
+3. 在wxml中使用插件
+<select prop-array='{{selectList}}' selectText="请选择" stype="1" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+1. selectList 为选择数组，必传
+2. stype 为下拉框id，多下拉框时，用于区分下拉框，可不传
+3. selectShow 为下拉状态，可不传
+4.m_select_touch 为 点击下拉菜单事件
 
 
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
