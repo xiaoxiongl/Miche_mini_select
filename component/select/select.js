@@ -95,11 +95,13 @@ Component({
       var nowIdx = e.target.dataset.index;
       var nowText = nowData[nowIdx].text;
       this.animation.rotate(0).step();
+      this.dw_animation.height(0).step();
       this.setData({
         textColor: "#333",
         selectShow: false,
         selectText: nowText,
-        animationData: this.animation.export()
+        animationData: this.animation.export(),
+        dropdown_Data:this.dw_animation.export()
       })
 
       this.triggerEvent('m_select_touch', { selIndex: nowIdx, stype: this.properties.stype });
